@@ -1,0 +1,7 @@
+/* Neutral white balance, shared by cards, thumbnails and full-size galleries. */
+img:not([src*="app-screen"]), [role="img"] > svg { filter: url("#photo-neutral"); }
+/* Indoor lighting needs a stronger reduction of yellow and pink. */
+img[src*="bed-interior"], img[src*="bed-robe"], img[src*="bedroom-window"],
+img[src*="dome-bedroom"], img[src*="bathroom"], img[src*="shower-sink"],
+img[src*="kitchen"], img[src*="minibar"], img[src*="tea-station"],
+img[src*="sauna-hats"], img[src*="sauna-bucket"] { filter: url("#photo-interior-neutral"); }
